@@ -1,7 +1,7 @@
 import "../../App.css";
-import "./about.css"
 import DownloadIcon from "@mui/icons-material/Download";
 import * as LottiePlayer from "@lottiefiles/lottie-player";
+import "./about.css"
 
 export default function About() {
   const getDate = () => {
