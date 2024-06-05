@@ -10,7 +10,7 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import * as LottiePlayer from "@lottiefiles/lottie-player";
+// import * as LottiePlayer from "@lottiefiles/lottie-player";
 import { useState } from "react";
 
 export default function Contact() {
@@ -20,21 +20,26 @@ export default function Contact() {
     setLoading(true);
     e.preventDefault();
     const { username, email, message } = e.target.elements;
-    const { REACT_APP_SERVICEID, REACT_APP_TEMPLATE, REACT_APP_PUBLICKEY } =
-      process.env;
+    // const { REACT_APP_SERVICEID, REACT_APP_TEMPLATE, REACT_APP_PUBLICKEY } =
+    //   process.env;
+
+    const serviceId ='service_slxky9b';
+    const templateId= 'template_9zu8n3b';
+    const publicKey='BrlJNsPl27qygISG_';
 
     const templateParams = {
-      username: username.value,
-      email: email.value,
+      from_name: username.value,
+      from_email: email.value,
       message: message.value,
+      to_name:'Lucas Leiro',
     };
 
     emailjs
       .send(
-        REACT_APP_SERVICEID,
-        REACT_APP_TEMPLATE,
+        serviceId,
+        templateId,
         templateParams,
-        REACT_APP_PUBLICKEY
+        publicKey
       )
       .then(
         (response) => {
@@ -200,7 +205,7 @@ export default function Contact() {
               <div
                 title="Github"
                 onClick={() =>
-                  window.open("https://github.com/daniel-jebarson", "_blank")
+                  window.open("https://github.com/LucasLeiroA", "_blank")
                 }
               >
                 <GitHubIcon className="cursor-pointer hover:scale-105" />
@@ -209,7 +214,7 @@ export default function Contact() {
                 title="Instagram"
                 onClick={() =>
                   window.open(
-                    "https://www.instagram.com/daniel_diago2003",
+                    "https://www.instagram.com/_lucasleiro/",
                     "_blank"
                   )
                 }
@@ -221,7 +226,7 @@ export default function Contact() {
                 title="Linkedin"
                 onClick={() =>
                   window.open(
-                    "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
+                    "https://www.linkedin.com/in/lucasleiro/",
                     "_blank"
                   )
                 }
@@ -233,7 +238,7 @@ export default function Contact() {
                 title="Facebook"
                 onClick={() =>
                   window.open(
-                    "https://www.facebook.com/daniel.jebarson.9",
+                    "https://www.facebook.com/lucas.leiro.12",
                     "_blank"
                   )
                 }
@@ -244,7 +249,7 @@ export default function Contact() {
             <div className="mt-6 italic text-sm font-medium text-blue-500 ">
               <span className=" pl-1 ">Copyright</span>
               <CopyrightIcon className="cursor-pointer mx-1" />
-              <span>2023 Daniel Jebarson K</span>
+              <span>2024 Lucas Leiro</span>
             </div>
           </div>
         </div>

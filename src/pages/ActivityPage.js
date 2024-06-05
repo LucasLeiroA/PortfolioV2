@@ -26,13 +26,13 @@ export default function ActivityPage() {
   const [totalActivity, setTotalActivity] = useState(0);
   const [currActivity, setCurrActivity] = useState(0);
   const [showLoading, setShowLoading] = useState(true);
-  const { REACT_APP_DISCORD_USER_ID } = process.env;
+  // const { REACT_APP_DISCORD_USER_ID } = process.env;
   const {
     data: userData,
     isLoading,
     error,
   } = useFetch(
-    `https://api.lanyard.rest/v1/users/${REACT_APP_DISCORD_USER_ID}`
+    `https://api.lanyard.rest/v1/users/690589610488758312`
   );
   useEffect(() => {
     if (!isLoading && userData != null && userData.activities != null) {
@@ -69,7 +69,7 @@ export default function ActivityPage() {
               <div className="relative">
                 <NavLink to={"/"}>
                   <img
-                    src={`https://cdn.discordapp.com/avatars/811919559086702642/${userData["discord_user"]["avatar"]}.png`}
+                    src={`https://cdn.discordapp.com/avatars/690589610488758312/${userData["discord_user"]["avatar"]}.png`}
                     alt={`${userData["discord_user"]["global_name"]}`}
                     title={"My page"}
                     className="rounded-full border-solid cursor-pointer  border-[6px]  border-neutral-800 shadow-md  min-h-fit mx-auto  max-w-[190px]"
@@ -97,11 +97,11 @@ export default function ActivityPage() {
               </div>
               <div className="py-2">
                 <h3 className="font-bold text-2xl text-white mb-1">
-                  {userData["discord_user"]["global_name"]}
+                  {userData["discord_user"]["username"]}
                 </h3>
                 <div className="inline-flex text-gray-300 items-center">
                   <LocationOnIcon />
-                  India, TN
+                  Argentina, Túcuman
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function ActivityPage() {
             <div
               title="Github"
               onClick={() =>
-                window.open("https://github.com/daniel-jebarson", "_blank")
+                window.open("https://github.com/LucasLeiroA", "_blank")
               }
             >
               <GitHubIcon className="cursor-pointer hover:scale-105" />
@@ -160,7 +160,7 @@ export default function ActivityPage() {
               title="Instagram"
               onClick={() =>
                 window.open(
-                  "https://www.instagram.com/daniel_diago2003",
+                  "https://www.instagram.com/_lucasleiro/",
                   "_blank"
                 )
               }
@@ -172,7 +172,7 @@ export default function ActivityPage() {
               title="Linkedin"
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
+                  "https://www.linkedin.com/in/lucasleiro/",
                   "_blank"
                 )
               }
@@ -184,7 +184,7 @@ export default function ActivityPage() {
               title="Facebook"
               onClick={() =>
                 window.open(
-                  "https://www.facebook.com/daniel.jebarson.9",
+                  "https://www.facebook.com/lucas.leiro.12",
                   "_blank"
                 )
               }

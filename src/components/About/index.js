@@ -4,7 +4,7 @@ import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 export default function About() {
   const getDate = () => {
-    var dob = new Date("01/21/2003");
+    var dob = new Date("09/03/2001");
     var month_diff = Date.now() - dob.getTime();
     var age_dt = new Date(month_diff);
     var year = age_dt.getUTCFullYear();
@@ -29,24 +29,24 @@ export default function About() {
             className="text-xl lg:text-3xl font-medium"
             data-aos={"fade-left"}
           >
-            I'm <span className="text-yellow-600">Daniel Jebarson,</span> a Web
+            I'm <span className="text-yellow-600">Lucas Leiro,</span> a Web
             Enthusiast
           </h3>
           <p
             className="pt-5 leading-7 text-slate-900 text-justify"
             data-aos={"fade-left"}
           >
-            I love playing music, reading comics and playing games. I am
-            currently pursuing BTech degree in VIT Vellore. I am {getDate()}{" "}
+            I love playing football, ride a bike and do sports. I graduated from the National University of Tucumán (UTN).
+             I am {getDate()}{" "}
             years old.I love exploring new technologies.
           </p>
           <p
             className="text-justify leading-7 text-slate-900"
             data-aos={"fade-right"}
           >
-            I am currently looking for jobs. I am also a discord bot developer.
-            I worked on reactJs, NextJs, TypeScript, Java and many more. I am
-            also looking to collaborate in open-source projects.
+          I am currently looking for work. I am also a web developer.
+           I worked on reactJs, Express, TypeScript, Angular and many more. 
+           I am also looking to collaborate on open source projects.
           </p>
         </div>
 
@@ -70,8 +70,8 @@ export default function About() {
           </div>
 
           <a
-            href={require("../../assets/files/Daniel Resume.pdf")}
-            download={"Dani's Resume"}
+            href={require("../../assets/files/Lucas Resume.pdf")}
+            download={"Lucas Resume"}
             target="_blank"
             rel="noreferrer"
             className="py-1 md:py-2 lg:py-3 mt-3 lg:mt-5 text-white mx-auto px-4  lg:px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 sm:text-xl  animate-zoomy"

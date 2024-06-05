@@ -25,19 +25,18 @@ export default function Resume() {
                 ></path>
               </svg>
             </span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold  text-white ml-28">
-              AWS Cloud Practioner
+            <h3 class="mb-1 text-lg font-semibold text-white">
+              University Technician in Programming 👨‍🎓 at UTN
             </h3>
             <time class="block pt-1 pb-3  text-sm font-normal leading-none  text-gray-500">
-              Completed on July 7th, 2023
+              Completed on July 20th, 2023
             </time>
             <p class="mb-4 text-base font-normal  text-gray-400">
-              Provides overall understanding of cloud computing concepts,
-              independent of specific technical roles. It provides a detailed
-              overview of cloud concepts, AWS core services, security,
-              architecture, pricing, and support.
+              My training as a Programming Technician has provided me with a solid foundation in a variety 
+              of key areas of computer science and software development,
+               preparing me to tackle technical challenges and contribute significantly in professional environments.
             </p>
-            <a
+            {/* <a
               href="https://www.credly.com/badges/bf6b9024-d4f8-465d-b345-d9b0c5a7abab/public_url"
               target="_blank"
               rel="noreferrer"
@@ -56,7 +55,7 @@ export default function Resume() {
                 ></path>
               </svg>{" "}
               Download Certificate
-            </a>
+            </a> */}
           </li>
           <li class="mb-10" data-aos="zoom-out" data-aos-delay="700">
             <span class="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8 ring-gray-900 bg-blue-900">
@@ -75,10 +74,10 @@ export default function Resume() {
               </svg>
             </span>
             <h3 class="mb-1 text-lg font-semibold text-white">
-              BackEnd Development and Apis
+              Frontend  ReactJs at CoderHouse
             </h3>
             <time class="block mb-2 text-sm font-normal leading-none text-gray-500">
-              Completed on May 28th, 2022
+               Completed on October 18th, 2022
             </time>
             <p class="text-base font-normal text-gray-400">
               Learned how to write back end apps with Node.js and npm. I also
@@ -86,7 +85,7 @@ export default function Resume() {
               mini-projects
             </p>
             <a
-              href="https://www.freecodecamp.org/certification/Daniel_Jebarson/back-end-development-and-apis"
+              href={require("../../assets/files/Certificado CoderHouse.png")}
               target="_blank"
               rel="noreferrer"
               class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border rounded-lg  focus:z-10 focus:ring-4 focus:outline-none focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
@@ -123,19 +122,17 @@ export default function Resume() {
               </svg>
             </span>
             <h3 class="mb-1 text-lg font-semibold text-white">
-              Frontend Development Libraries
+              Angular Developer
             </h3>
             <time class="block mb-2 text-sm font-normal leading-none text-gray-500">
-              Completed on December 9, 2022
+              Completed on may 22, 2024
             </time>
             <p class="text-base font-normal text-gray-400">
-              Learns how to style your site quickly with Bootstrap. I also learn
-              how to add logic to your CSS styles and extend them with Sass.
-              Later, I also built a shopping cart and other applications to
-              learn how to create powerful Single Page Applications (SPAs) with
-              React and Redux.
+            Developed personal applications using Angular, adhering to framework standards and best practices. 
+            Acquired proficiency in Angular based on TypeScript and utilized 
+            third-party libraries. Expanded knowledge in related topics within application development with Angular.
             </p>
-            <a
+            {/* <a
               target="_blank"
               rel="noreferrer"
               href="https://www.freecodecamp.org/certification/Daniel_Jebarson/front-end-development-libraries"
@@ -154,7 +151,7 @@ export default function Resume() {
                 ></path>
               </svg>{" "}
               Download Certificate
-            </a>
+            </a> */}
           </li>
         </ol>
 
@@ -164,15 +161,15 @@ export default function Resume() {
             <BarGraph name={"JavaScript"} percent={65} />
             <BarGraph name={"React"} percent={75} />
             <BarGraph name={"TypeScript"} percent={60} />
-            <BarGraph name={"Java"} percent={80} />
+            <BarGraph name={"Angular"} percent={60} />
             <BarGraph name={"HTML/CSS"} percent={85} />
             <BarGraph name={"SQL"} percent={65} />
-            <BarGraph name={"AWS"} percent={40} />
+            <BarGraph name={"MongoDB"} percent={40} />
           </div>
 
           <a
-            href={require("../../assets/files/Daniel Resume.pdf")}
-            download={"Dani's Resume"}
+            href={require("../../assets/files/Lucas Resume.pdf")}
+            download={"Lucas Resume"}
             class="inline-flex items-center px-6 py-2 mt-12 mx-auto w-fit text-sm font-medium border rounded-lg  focus:z-10 focus:ring-4 focus:outline-none focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
           >
             Download CV <DownloadIcon />
