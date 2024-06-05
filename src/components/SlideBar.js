@@ -69,12 +69,13 @@ export default function Slidebar() {
           <div data-aos="slide-down">
             <NavLink to={"/activity"}>
             <img
-                src={require("../assets/images/MyPerfil.jpeg")}
-                alt="Lucas Leiro"
-                title="Discord Activity"
-                className="rounded-full border-solid cursor-pointer border-[8px] border-stone-600 min-h-fit mx-auto max-w-[190px] object-cover"
-                style={{ width: "100%", maxWidth: "190px", height: "auto" }}
-              />
+                  src={require("../assets/images/MyPerfil.jpeg")}
+                  alt="Lucas Leiro"
+                  title="Discord Activity"
+                  className="rounded-full border-solid cursor-pointer border-[8px] border-stone-600 min-h-fit mx-auto max-w-[190px] object-cover"
+                  style={{ width: "100%", maxWidth: "190px", height: "auto" }}
+                />
+
               <h3 className="text-white name py-4 font-medium">
                 Lucas Leiro
               </h3>
