@@ -62,7 +62,7 @@ export default function Slidebar() {
       )}
 
       <div
-        className={`sidebar-container flex-none lg:block bg-black h-screen fixed z-40 transition-transform duration-300 ${
+        className={`flex-none lg:block bg-black h-screen fixed z-40 transition-transform duration-300 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         } w-full lg:w-[25%]`}
       >
