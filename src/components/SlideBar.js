@@ -5,12 +5,28 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Slidebar() {
-  const [select, setSelect] = useState(0);
+ const [select, setSelect] = useState(0);
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+      // Ahora, setIsMobile será verdadero solo cuando el ancho de la ventana sea menor a 1024 píxeles
+    };
+
+    handleResize(); // Llamamos a la función al principio para determinar el estado inicial
+    window.addEventListener("resize", handleResize); // Añadimos el listener del evento de resize
+
+    // Limpiamos el listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const scroll = (section) => {
     if (section === "#") {
@@ -29,18 +45,20 @@ export default function Slidebar() {
 
   return (
     <>
-      <div className="fixed top-0 w-full flex justify-between items-center bg-black text-white p-4 z-50">
-        <button onClick={toggleSidebar}>
-          {isSidebarOpen ? <CloseIcon /> : <MenuIcon />}
-        </button>
-        <div className="ml-auto">
-          <img
-            src={require("../assets/images/exploiter.webp")}
-            alt="Logo"
-            className="h-10"
-          />
+       {isMobile && (
+          <div className="fixed top-0 w-full flex justify-between items-center bg-black text-white p-4 z-50">
+          <button onClick={toggleSidebar}>
+            {isSidebarOpen ? <CloseIcon /> : <MenuIcon />}
+          </button>
+          <div className="ml-auto">
+            <img
+              src={require("../assets/images/exploiter.webp")}
+              alt="Logo"
+              className="h-10"
+            />
+          </div>
         </div>
-      </div>
+      )}
 
       <div
         className={`flex-none lg:block bg-black h-screen fixed z-40 transition-transform duration-300 ${
