@@ -74,7 +74,7 @@ export default function Slidebar() {
                 alt="Lucas Leiro"
                 title="Discord Activity"
                 // className="rounded-full border-solid cursor-pointer border-[8px] border-stone-600 min-h-fit mx-auto max-w-[190px] object-cover"
-                className="rounded-full border-solid cursor-pointer border-[8px] m-auto object-cover"
+                className="rounded-full border-solid cursor-pointer border-[8px] border-stone-600 m-auto object-cover"
                 style={{ width: "100%", maxWidth: "190px", height: "auto" }}
               />
 
