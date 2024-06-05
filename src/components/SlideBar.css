@@ -3,7 +3,8 @@
       width: 100%;
       max-width: 150px; /* Ajusta este valor según sea necesario */
       max-height: 150px;
-      object-fit: cover; /* Esto asegurará que la imagen mantenga su relación de aspecto */
+      object-fit: cover;
+    /* Esto asegurará que la imagen mantenga su relación de aspecto */
     }
   }
 
