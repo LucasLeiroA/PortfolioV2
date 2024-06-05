@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+    .profile-image {
+      width: 100%;
+      max-width: 150px; /* Ajusta este valor según sea necesario */
+      height: auto;
+      object-fit: cover; /* Esto asegurará que la imagen mantenga su relación de aspecto */
+    }
+  }
+
+
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }

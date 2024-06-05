@@ -1,4 +1,5 @@
 import "../App.css";
+import "./SlideBar.css"
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -61,7 +62,7 @@ export default function Slidebar() {
       )}
 
       <div
-        className={`flex-none lg:block bg-black h-screen fixed z-40 transition-transform duration-300 ${
+        className={`sidebar-container flex-none lg:block bg-black h-screen fixed z-40 transition-transform duration-300 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         } w-full lg:w-[25%]`}
       >
@@ -69,12 +70,12 @@ export default function Slidebar() {
           <div data-aos="slide-down">
             <NavLink to={"/activity"}>
             <img
-                  src={require("../assets/images/MyPerfil.jpeg")}
-                  alt="Lucas Leiro"
-                  title="Discord Activity"
-                  className="rounded-full border-solid cursor-pointer border-[8px] border-stone-600 min-h-fit mx-auto max-w-[190px] object-cover"
-                  style={{ width: "100%", maxWidth: "190px", height: "auto" }}
-                />
+                src={require("../assets/images/MyPerfil.jpeg")}
+                alt="Lucas Leiro"
+                title="Discord Activity"
+                className="rounded-full border-solid cursor-pointer border-[8px] border-stone-600 min-h-fit mx-auto max-w-[190px] object-cover"
+                style={{ width: "100%", maxWidth: "190px", height: "auto" }}
+              />
 
               <h3 className="text-white name py-4 font-medium">
                 Lucas Leiro
