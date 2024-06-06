@@ -1,14 +1,15 @@
 import Work from "./work";
 import { projects } from "../../constants";
+import "./projects.css"
 
 export default function Projects() {
   return (
     <div
       id="projects"
-      className="min-h-screen flex flex-col justify-center text-center gap-10"
+      className=" min-h-screen flex flex-col justify-center text-center gap-10 "
     >
       <div
-        className="font-extrabold  py-5 mt-10 text-5xl"
+        className="projects-tittle font-extrabold  py-5 mt-10 text-5xl"
         data-aos={"slide-up"}
         data-aos-duration={"700"}
       >

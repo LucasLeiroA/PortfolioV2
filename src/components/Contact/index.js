@@ -12,6 +12,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import * as LottiePlayer from "@lottiefiles/lottie-player";
 import { useState } from "react";
+import "./contac.css"
 
 export default function Contact() {
   const [mailSent, setMailSent] = useState(false);
@@ -76,7 +77,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex text-center flex-col gap-12 my-10 min-h-screen ml-4 overflow-hidden"
+      className="contact-container flex text-center flex-col gap-12 my-10 min-h-screen ml-4 overflow-hidden"
     >
       <div className="text-5xl font-bold" data-aos={"fade"}>
         Contact

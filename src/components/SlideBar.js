@@ -53,9 +53,9 @@ export default function Slidebar() {
           </button>
           <div className="ml-auto">
             <img
-              src={require("../assets/images/exploiter.webp")}
+              src={require("../assets/images/Logo.png")}
               alt="Logo"
-              className="h-10"
+              className="h-20"
             />
           </div>
         </div>

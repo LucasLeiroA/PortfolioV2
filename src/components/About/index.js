@@ -16,7 +16,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="min-h-screen bg-white flex flex-col text-center gap-5 text-black text-sm lg:text-lg  font-normal"
+      className="cont-about min-h-screen bg-white flex flex-col text-center gap-5 text-black text-sm lg:text-lg  font-normal"
     >
       <div
         className="head text-3xl lg:text-5xl mt-12 font-bold"

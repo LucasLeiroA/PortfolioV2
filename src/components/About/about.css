@@ -15,11 +15,15 @@
   .about-container {
     flex-direction: column;
     align-items: center;
+
   }
 
   .about-content,
   .about-animation {
     margin: auto;
     width: 90%;
+  }
+  .cont-about{
+    padding-top: 40px;
   }
 }
