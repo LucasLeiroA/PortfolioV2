@@ -1,8 +1,9 @@
-/* .about-container {
+.about-container {
   display: flex;
   flex-direction: row;
-  gap: 6px;
+  gap: 30px;
   margin-left: 12px;
+  margin-bottom: 100px;
 }
 
 .about-content,
@@ -18,6 +19,7 @@
 
   .about-content,
   .about-animation {
-    width: 100%;
+    margin: auto;
+    width: 90%;
   }
-} */
+}

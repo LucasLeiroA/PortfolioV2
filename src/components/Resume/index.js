@@ -1,10 +1,11 @@
 import BarGraph from "./BarGraph";
 import DownloadIcon from "@mui/icons-material/Download";
+import "./resume.css"
 
 export default function Resume() {
   return (
     <div id="resume" className="min-h-screen flex-col text-center">
-      <div className="text-5xl font-bold py-8" data-aos={"slide-down"}>
+      <div className="resume-tittle text-5xl font-bold py-8 text-success mt-15" data-aos={"slide-down"}>
         Resume
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-7">

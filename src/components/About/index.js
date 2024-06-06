@@ -25,7 +25,7 @@ export default function About() {
         About Me
       </div>
       <div className="about-container flex flex-row  gap-6 ml-12 ">
-        <div className="about-content flex-col mt-14 flex flex-auto w-64 gap-6 col-md-12">
+        <div className="about-content flex-col mt-14 flex flex-auto w-64 gap-6 ml-8">
           <h3
             className="text-xl lg:text-3xl font-medium"
             data-aos={"fade-left"}
@@ -72,7 +72,7 @@ export default function About() {
             download={"Lucas Resume"}
             target="_blank"
             rel="noreferrer"
-            className="py-1 md:py-2 lg:py-3 mt-3 lg:mt-5 text-white mx-auto px-4  lg:px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 sm:text-xl  animate-zoomy"
+            className="btn-donwload py-1 md:py-2 lg:py-3 mt-3 lg:mt-5 text-white mx-auto px-4  lg:px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 sm:text-xl  animate-zoomy"
           >
             Download CV
             <DownloadIcon />
