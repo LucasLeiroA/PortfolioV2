@@ -1,119 +1,69 @@
 export const projects = [
   {
-    title: "Plants vs Zombies API",
-    desc: "An API built with with NextTS and Tailwind CSS to help website builders build their websites about Plants-vs-Zombies-2 easily! Data has been scraped from fandom websites and all data are  error free",
+    title: "Mundo Celular",
+    desc: "Mundo Celular is an e-commerce project developed during the React JS course at Coder House. The platform enables the sale of mobile phones and accessories, using technologies such as HTML, CSS, Bootstrap, JavaScript, ReactJS, and Firebase. The site features product views and detailed pages, providing an efficient and modern shopping experience.",
     tags: [
       {
-        name: "NextTs",
+        name: "Firebase",
         color: "red-600",
       },
       {
-        name: "TailwindCSS",
+        name: "BootStrap",
         color: "green-600",
       },
-    ],
-    img: "pvz.webp",
-    link: "https://pvz-2-api.vercel.app/",
-    code: "https://github.com/code-cracked/plants-vs-zombies-api",
-  },
-  {
-    title: "Web-Chat-App",
-    desc: "An app made with NextJs to help each other communicate fastly and securely. We can also search for the friends with their username.Realtime updates on messages.",
-    tags: [
-      {
-        name: "NextJs",
-        color: "red-600",
-      },
-      {
-        name: "ChakraUI",
-        color: "green-600",
-      },
-      {
-        name: "SocketIO",
-        color: "yellow-600",
-      },
-      {
-        name: "MongoDB",
-        color: "blue-800",
-      },
-    ],
-    img: "webchatapp.webp",
-    link: "https://web-chat-app-brown.vercel.app",
-    code: "https://github.com/daniel-jebarson/web-chat-app",
-  },
-  {
-    title: "Exploiter(deprecated)",
-    desc: "This is the simple multi-featured discord bot which is in more than 90+ servers that resembles lords mobile as mini game. It contains the featiures of many bots such as dyno,carl-bot,mee6 etc.It helps to authorize the users, audit the messages and can also be used for other server developments and also for mini-games.  ",
-    tags: [
-      {
-        name: "Python",
-        color: "red-600",
-      },
-      {
-        name: "Discord.py",
-        color: "green-600",
-      },
-      {
-        name: "discord-interactions",
-        color: "yellow-600",
-      },
-      {
-        name: "Flask",
-        color: "blue-800",
-      },
-    ],
-    img: "exploiter.webp",
-    link: "https://drive.google.com/file/d/1npEOuOhQh-1zRiLB9fFn-6ORTwd1gZkl/view",
-    code: "https://github.com/daniel-jebarson/EXPLOITER",
-  },
-  {
-    title: "Stock Market",
-    desc: "Stock Market Website done with ReactJs as Frontend and Express as Backend. This websites gives practice for people those who want to start using stock market. It is based on realtime update of stock value.",
-    tags: [
       {
         name: "ReactJs",
+        color: "blue-800",
+      }
+    ],
+    img: "MundoCelular.jpeg",
+    link: "https://mundocel.netlify.app/",
+    code: "https://github.com/LucasLeiroA/pag-muendo-celular-v.1",
+  },
+  {
+    title: "Rick and Morty",
+    desc: "Rick and Morty App is an application developed with React that consumes the Rick and Morty API. The platform allows users to explore and obtain detailed information about the series' characters, using technologies such as HTML, CSS, JavaScript, and ReactJS. The app offers an interactive and user-friendly interface, providing an entertaining and educational user experience.",
+    tags: [
+      {
+        name: "Css",
         color: "red-600",
       },
       {
-        name: "ExpressJs",
+        name: "API Rick and Morty",
         color: "green-600",
       },
       {
-        name: "MongoDB",
+        name: "ReactJs",
         color: "blue-800",
       },
     ],
-    img: "stockmarket.webp",
-    link: "https://stock-market-seven.vercel.app/",
-    code: "https://github.com/daniel-jebarson/Stock-Market",
+    img: "RickAndMorthy.jpeg",
+    link: "https://reactrickandmortyapp.netlify.app/",
+    code: "https://github.com/LucasLeiroA/RickyAndMortyReact",
   },
   {
-    title: "You-Farm",
-    desc: "An app made with NextJs, Machine Learning and ExpressJs to help farmers to sell their crops without intermediate. It also suggests which crops are needed for the specific soil.",
+    title: "kioskoweb",
+    desc: "Kiosko WEB is a project developed to manage sales and stock of products sold in a hotel kiosk. The application uses technologies such as HTML, CSS, Bootstrap, JavaScript, and Firebase. It enables stock registration, sales processing, client billing, and the generation of multiple reports, providing a comprehensive and efficient solution for kiosk management.",
     tags: [
       {
-        name: "NextJs",
+        name: "CSS",
         color: "red-600",
       },
       {
-        name: "MaterialUI",
+        name: "Firebase",
         color: "green-600",
       },
       {
-        name: "ExpressJs",
+        name: "BootStrap",
         color: "yellow-600",
       },
       {
-        name: "FireBase",
+        name: "	JavaScript",
         color: "blue-800",
       },
-      {
-        name: "Machine Learning",
-        color: "orange-600",
-      },
     ],
-    img: "youfarm.webp",
-    link: "https://github.com/code-cracked/you-farm",
-    code: "https://github.com/code-cracked/you-farm",
-  },
+    img: "kioskoWeb.jpeg",
+    link: "https://kioskoweb.netlify.app/",
+    code: "https://github.com/LucasLeiroA/FinalProgramacion",
+  }
 ];
