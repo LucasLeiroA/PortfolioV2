@@ -65,5 +65,51 @@ export const projects = [
     img: "kioskoWeb.jpeg",
     link: "https://kioskoweb.netlify.app/",
     code: "https://github.com/LucasLeiroA/FinalProgramacion",
+  },
+  {
+    title: "Reservation Sistem",
+    desc: "Hotel Management System is a comprehensive solution designed to manage hotel operations and reservations from scratch. The application leverages Angular for the frontend, Node.js and Express for the backend, and MongoDB for database management. It utilizes AWS S3 for scalable storage and includes a robust API for seamless integration. The system features extensive functionalities such as reservation management, report generation, and full customization capabilities, ensuring scalability and efficiency for future growth.",
+    tags: [
+      {
+        name: "Angular",
+        color: "red-600",
+      },
+      {
+        name: "MongoDB",
+        color: "green-600",
+      },
+      {
+        name: "Angular Material",
+        color: "yellow-600",
+      },
+      {
+        name: "	Typescript",
+        color: "blue-800",
+      },
+      {
+        name: "	BootStrap",
+        color: "violet-500",
+      },
+      {
+        name: "	Scss",
+        color: "pink-600",
+      },
+      {
+        name: "	Node JS",
+        color: "green-600",
+      },
+      {
+        name: "	Express",
+        color: "orange-600",
+      },
+      {
+        name: "	AWS service",
+        color: "yellow-300",
+      },
+    ],
+    img: "gestion.jpeg",
+    link: "https://reservationhotel2.netlify.app/",
+    code: "https://github.com/LucasLeiroA/reservation-fron-v2",
   }
+
 ];
