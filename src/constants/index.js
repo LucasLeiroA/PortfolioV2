@@ -110,6 +110,28 @@ export const projects = [
     img: "gestion.jpeg",
     link: "https://reservationhotel2.netlify.app/",
     code: "https://github.com/LucasLeiroA/reservation-fron-v2",
+  },
+  {
+    title: "gastronimic-landing-page",
+    desc: "The Gastronomic Business Landing Page is a demonstration project showcasing my design skills, built using React. This landing page is crafted to highlight the unique features of a restaurant or food business, with a focus on modern, responsive design and user experience. Although created as a test project, it reflects real-world applications and serves as a strong example of my ability to develop visually appealing and functional web solutions.",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-600",
+      },
+      {
+        name: "tailwind",
+        color: "green-600",
+      },
+      {
+        name:"BootStrap",
+        color:"violet-800"
+      }
+
+    ],
+    img: "gastronomic.png",
+    link: "https://main--gastronic-langing.netlify.app/",
+    code: "https://github.com/LucasLeiroA/landing-negocio-gastronomico",
   }
 
 ];
